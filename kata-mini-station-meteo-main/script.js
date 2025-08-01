@@ -24,8 +24,9 @@ const fetchLocalisation = async (inputValue) => {
             document.getElementById("city").innerText = "Ville introuvable"
             divGps.innerText = ""
             document.getElementById("temperature").innerText = ""
+        }else{
+            ShowApiLocalisation(data)
         }
-        ShowApiLocalisation(data)
         return data
     }
     catch (error) {
