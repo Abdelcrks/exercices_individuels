@@ -9,13 +9,16 @@ function afficherEtoiles(n){
 
 }
 
-afficherEtoiles(2)
-afficherEtoiles(5)
+// afficherEtoiles(2)
+// afficherEtoiles(5)
 
   
 
 function afficherRectangle(hauteur,largeur){
-    
+
+    for(let i=0; i <hauteur; i++){
+        afficherEtoiles(largeur)
+    }
 }
 
-afficherRectangle(5,5)
+afficherRectangle(5,9)
